@@ -56,4 +56,12 @@ public class Message {
                 .replace(TemplatePlaceholder.ASSIGNEE_NAME.getPlaceholder(), String.join(", ", reviewAssignee))
                 .replace(TemplatePlaceholder.PR_LINK.getPlaceholder(), prLink);
     }
+
+    public String getTemplate() {
+        return template;
+    }
+
+    public Long getMessengerId() {
+        return messengerId;
+    }
 }
